@@ -1,3 +1,7 @@
+@props([
+    'show_btn' => false,
+])
+
 <div class="bg-gray-600 text-white p-16">
     <div class="grid grid-cols-1">
         <div class="md:py-40">
@@ -6,9 +10,12 @@
                    {{$slot}}
                 </h1>
             </div>
+            @if ($show_btn)
             <div class="mt-12">
                 <a href="#" class="border-4 border-red text-white p-6">Click here</a>
             </div>
+            @endif
+            
         </div>
     </div>
     
