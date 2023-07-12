@@ -1,7 +1,28 @@
 <x-guest-layout>
     <x-lander.section-a show_btn="true">
-        EU and Greece must take accountability for policies and decisions that contributed to deadly shipwreck
     </x-lander.section-a>
+    <div class="grid md:grid-cols-2 gap-4 md:p-40 p-8">
+        <div class="h-2/3">
+            {{-- <div class="bg-black h-full w-full"> --}}
+                <img class="rounded-sm h-full shadow-2xl" src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            {{-- </div> --}}
+           
+        </div>
+        <div class="pt-24">
+            <p class="text-3xl font-light py-2">Welcome To</p>
+            <h2 class="text-5xl font-black">Modern Clinic</h2>
+            <p class="py-8 text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veni.
+            </p>
+            <div>
+                <div class="mt-12">
+                    <a href="#" class="rounded-md bg-gradient-to-r from-sky-500 to-blue-500 text-white px-10 p-4">About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <x-lander.section-b>
        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
