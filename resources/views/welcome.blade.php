@@ -23,6 +23,43 @@
             </div>
         </div>
     </div>
+
+    <div class="bg-gray-50 md:p-40 p-8">
+        <div class="mx-4">
+            <h1 class="text-5xl font-black">Departments</h1>
+            <div class="mr-16">
+                <p class="py-4 pr-16 text-gray-700 text-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+       
+        </div>
+        
+        <div class="flex flex-row flex-wrap gap-4 mx-4 py-16">
+            <div class="p-8 border border-blue-400 text-blue-400 rounded-sm bg-white">
+                
+                Dentist
+            </div>
+            <div class="p-8 border border-blue-400 text-blue-400 rounded-sm bg-white">
+                Cardiology
+            </div>
+            <div class="p-8 border border-blue-400 text-blue-400 rounded-sm bg-white">
+                ENT Specialist
+            </div>
+        </div>
+        <div class="grid grid-cols-1 m-4 rounded-md md:grid-cols-2 p-8 md:px-40 text-black bg-white shadow-2xl">
+            <div><img src="https://preview.colorlib.com/theme/medi/img/department/1.jpg.webp" alt=""></div>
+            <div class="mx-8">
+                <h2>Dentist with surgical mask holding
+                    scaler near patient</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <div class="mt-12">
+                        <a href="#" class="border-4 border-blue-400 text-blue-400 md:p-6 p-4">Make an appointment</a>
+                    </div> 
+            </div>
+        </div>
+    </div>
     <x-lander.section-b>
        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
@@ -88,7 +125,7 @@
         </div>
        </div>
     </x-lander.section-b>
-    <x-lander.section-a>
+    {{-- <x-lander.section-a>
         <div class="bg-white text-black rounded-lg grid grid-cols-1 gap-2 md:grid-cols-2">
             <div class="p-2">
                 <img class="" src="https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
@@ -134,60 +171,90 @@
             </div>
            
         </div>
-    </x-lander.section-a>
+    </x-lander.section-a> --}}
     <x-lander.section-b>
         <div class="text-center place-content-center">
-            <h1>This is the heading</h1>
-            <p class="text-sm text-center mb-4">
-                Doctors Without Borders/Médecins Sans Frontières (MSF) cares for 
-                people affected by conflict, disease outbreaks, 
-            </p>
-            {{-- <div class="border-2 border-red-600 max-w-2xl"> --}}
+            <h1 class="text-2xl md:text-5xl font-black py-2">Our Doctors</h1>
+            <div class="md:px-68 text-wrap pl-16 pr-16 my-8 mb-4">
+                <p class="text-lg font-light text-center mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+            </div>
+            
         </div>
-        <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+        <br>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-4 place-content-center mt-4">
             
             <div class="rounded-md shadow-md grid grid-cols-1">
                 <div class="h-1/2">
-                    <img class="rounded-t-md" src="https://images.pexels.com/photos/3951360/pexels-photo-3951360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <img class="rounded-t-md w-full" src="https://preview.colorlib.com/theme/medi/img/experts/1.png.webp" alt="">
                 </div>
-                <div>
-                    <p class="text-sm text-center">
-                        Doctors Without Borders/Médecins Sans Frontières (MSF) cares for 
-                        people affected by conflict, disease outbreaks, 
+                <div class="rounded-2xl mt-4 text-center md:px-16 px-4">
+                    <h1 class="text-2xl md:text-4xl p-4 font-black text-sky-500">John Smith</h1>
+                    <p class="text-sm text-center text-gray-500">
+                        Dentist
                     </p>
+                    <div class="my-8">
+                        <hr class="border border-sky-500">
+                    </div>
+                    <div class="text-center flex flex-row gap-4 justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                    </div>
+                      
+                      
                 </div>
             </div>
             <div class="rounded-md shadow-md grid grid-cols-1">
                 <div class="h-1/2">
-                    <img class="rounded-t-md" src="https://images.pexels.com/photos/3951360/pexels-photo-3951360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <img class="rounded-t-md w-full" src="https://preview.colorlib.com/theme/medi/img/experts/3.png.webp" alt="">
                 </div>
-                <div>
-                    <p class="text-sm text-center">
-                        Doctors Without Borders/Médecins Sans Frontières (MSF) cares for 
-                        people affected by conflict, disease outbreaks, 
+                <div class="rounded-2xl mt-4 text-center md:px-16 px-4">
+                    <h1 class="text-2xl md:text-4xl p-4 font-black text-sky-500">John Smith</h1>
+                    <p class="text-sm text-center text-gray-500">
+                        Dentist
                     </p>
+                    <div class="my-8">
+                        <hr class="border border-sky-500">
+                    </div>
+                    <div class="text-center flex flex-row gap-4 justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                    </div>
+                      
+                      
                 </div>
             </div>
             <div class="rounded-md shadow-md grid grid-cols-1">
                 <div class="h-1/2">
-                    <img class="rounded-t-md" src="https://images.pexels.com/photos/3951360/pexels-photo-3951360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <img class="rounded-t-md w-full" src="https://preview.colorlib.com/theme/medi/img/experts/2.png.webp" alt="">
                 </div>
-                <div>
-                    <p class="text-sm text-center">
-                        Doctors Without Borders/Médecins Sans Frontières (MSF) cares for 
-                        people affected by conflict, disease outbreaks, 
+                <div class="rounded-2xl mt-4 text-center md:px-16 px-4">
+                    <h1 class="text-2xl md:text-4xl p-4 font-black text-sky-500">John Smith</h1>
+                    <p class="text-sm text-center text-gray-500">
+                        Dentist
                     </p>
-                </div>
-            </div>
-            <div class="rounded-md shadow-md grid grid-cols-1">
-                <div class="h-1/2">
-                    <img class="rounded-t-md" src="https://images.pexels.com/photos/3951360/pexels-photo-3951360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                </div>
-                <div>
-                    <p class="text-sm text-center">
-                        Doctors Without Borders/Médecins Sans Frontières (MSF) cares for 
-                        people affected by conflict, disease outbreaks, 
-                    </p>
+                    <div class="my-8">
+                        <hr class="border border-sky-500">
+                    </div>
+                    <div class="text-center flex flex-row gap-4 justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                          </svg>
+                    </div>
+                      
+                      
                 </div>
             </div>
             
