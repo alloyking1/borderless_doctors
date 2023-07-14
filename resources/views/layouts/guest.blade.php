@@ -16,12 +16,11 @@
         <livewire:styles />
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="w-full">
-            <div class="max-w-4xl">
+        
+            <div class="w-full sticky top-0">
                 @include('layouts.guest-navigation')
             </div>
-        </div>
-        <div class="w-full">
+        <div class="w-auto">
            
                 {{ $slot }}
         </div>
