@@ -3,29 +3,28 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <div class="bg-gray-50 md:p-40 p-8 w-auto">
-        <div class="mx-4">
-            <h1 class="md:text-3xl text-4xl font-black">Login Page</h1>
-        </div>
+       
         
-        <div class="grid grid-cols-1 m-4 rounded-md p-8 md:px-40 text-black bg-white shadow-2xl">
+        <div class="grid grid-cols-1 m-4 rounded-2xl p-8 md:px-40 text-black bg-white shadow-2xl">
+            <div class="my-4">
+                <h1 class="md:text-3xl text-4xl font-black">Log In</h1>
+                <p class="text-gray-900 text-xs font-thin">You need to Log in to request the service of a doctor</p>
+            </div>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
         
                 <!-- Email Address -->
                 <div>
-                    <x-input-label for="email" :value="__('Email')" />
-                    <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                    <x-text-input id="email" class="block mt-1 w-full" type="email" placeholder="Email" name="email" :value="old('email')" required autofocus autocomplete="username" />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
         
                 <!-- Password -->
                 <div class="mt-4">
-                    <x-input-label for="password" :value="__('Password')" />
-        
                     <x-text-input id="password" class="block mt-1 w-full"
                                     type="password"
                                     name="password"
-                                    required autocomplete="current-password" />
+                                    required autocomplete="current-password" placeholder="password" />
         
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
@@ -33,8 +32,11 @@
                 <!-- Remember Me -->
                 <div class="block mt-4">
                     <label for="remember_me" class="inline-flex items-center">
-                        <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                        <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                        <div class="ml-2 text-gray-600 text-xs">Don't have an account? 
+                            <span class="-ml-4">
+                                <a href="{{ route('register') }}" class="text-blue-800 font-bold font-tighter underline rounded-sm px-4 py-2 hover:text-blue-500 hover:font-black text-lg">Register</a>
+                            </span> 
+                        </div>
                     </label>
                 </div>
         
