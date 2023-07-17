@@ -13,21 +13,14 @@ return new class extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('location');
-            $table->string('img');
-            $table->email('email')->nullable();
+            $table->string('phone');
+            $table->string('ssn');
+            $table->string('address');
+            $table->string('requestDetails');
+            $table->string('passport');
+            $table->foreignId('users_id')->constrained('users')->cascadeOnDelete();
             $table->timestamps();
         });
-
-
-        //    DB::table('task_groups')->insert([
-        //     ['name' => 'TASKS TODAY', 'location' => 'description of the category', 'email' => 'test@email.com'],
-        //     ['name' => 'TASKS TOMORROW', 'description' => 'description of the category'],
-        //     ['name' => 'TASKS NEXT WEEK', 'description' => 'description of the category'],
-        //     ['name' => ' TASKS NEXT WEEK', 'description' => 'description of the category'],
-        //     ['name' => ' TASKS NEXT', 'description' => 'description of the category'],
-        // ]);
     }
 
     /**

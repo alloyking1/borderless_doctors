@@ -28,8 +28,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/become-a-doctor', [DoctorController::class, 'requestDoctor'])->name('dashboard.become-a-doctor');
-    Route::get('/request-a-doctor', [DoctorController::class, 'becomeDoctor'])->name('dashboard.request-a-doctor');
+    Route::get('/become-a-doctor', [DoctorController::class, 'becomeDoctor'])->name('dashboard.become-a-doctor');
+    Route::get('/request-a-doctor', [DoctorController::class, 'requestDoctor'])->name('dashboard.request-a-doctor');
+    Route::post('/request-a-doctor', [DoctorController::class, 'doctorApplication'])->name('dashboard.request-a-doctor');
 });
 
 Route::middleware('auth')->group(function () {
