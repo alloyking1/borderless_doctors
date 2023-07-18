@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,12 +26,17 @@ Route::view('/about', 'About')->name('pages.about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/become-a-doctor', [DoctorController::class, 'becomeDoctor'])->name('dashboard.become-a-doctor');
     Route::get('/request-a-doctor', [DoctorController::class, 'requestDoctor'])->name('dashboard.request-a-doctor');
     Route::post('/request-a-doctor', [DoctorController::class, 'doctorApplication'])->name('dashboard.request-a-doctor');
+});
+
+Route::middleware('admin')->group(function () {
+    Route::get('/admin-dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin-dashboard/{id}', [AdminController::class, 'show'])->name('admin.show');
 });
 
 Route::middleware('auth')->group(function () {
