@@ -1,8 +1,4 @@
 <x-app-layout>
-
-
-
-
     <x-slot name="header">
         <h2 class="text-base text-gray-500 text-thin leading-tight">
             Hello {{ Auth::user()->name}}
@@ -36,7 +32,6 @@
                                 <td>{{ $request->address }}</td>
                                 <td>{{ $request->requestDetails }}</td>
                                 <td class="hover:text-blue-500">
-                                    {{-- <img src="{{ asset('images/'.$request->passport) }}" alt=""> --}}
                                     <a href="{{ route('admin.show', ['id' => $request->id] )}}"> {{ $request->passport }}</a>
                                 </td>
                                 

@@ -1,12 +1,9 @@
 <x-guest-layout>
     <x-lander.section-a show_btn="true">
     </x-lander.section-a>
-    <div class="grid md:grid-cols-2 gap-4 md:p-40 p-8">
+    <div class="grid md:grid-cols-2 md:-mb-24 gap-4 md:p-40">
         <div class="h-2/3">
-            {{-- <div class="bg-black h-full w-full"> --}}
-                <img class="rounded-sm h-full shadow-2xl" src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-            {{-- </div> --}}
-           
+                <img class="rounded-sm h-full shadow-2xl" src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">          
         </div>
         <div class="pt-24">
             <p class="text-3xl font-light py-2">Welcome To</p>

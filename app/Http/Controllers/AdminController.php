@@ -12,7 +12,7 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin.dashboard', [
-            'doctorRequest' => Doctor::paginate(10)
+            'doctorRequest' => Doctor::orderBy('created_at', 'desc')->paginate(10)
         ]);
     }
 
@@ -21,5 +21,11 @@ class AdminController extends Controller
         return view('admin.show', [
             'item' => Doctor::where('id', $id)->get()
         ]);
+    }
+
+    public function imgDownload($img)
+    {
+        $file = asset('images/' . $img);
+        return response()->download($file);
     }
 }

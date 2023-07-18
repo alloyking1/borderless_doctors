@@ -37,6 +37,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware('admin')->group(function () {
     Route::get('/admin-dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin-dashboard/{id}', [AdminController::class, 'show'])->name('admin.show');
+    Route::get('/admin-image-download/{img_path}', [AdminController::class, 'imgDownload'])->name('admin.image-download');
 });
 
 Route::middleware('auth')->group(function () {

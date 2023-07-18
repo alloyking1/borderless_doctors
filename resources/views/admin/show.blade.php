@@ -20,7 +20,7 @@
                         <span>
                             <div>
                                 <img src="{{ asset('images/'.$each->passport) }}" alt="">
-                                <button class="my-2 rounded-sm border border-gray-600 text-gray-600 p-2">Download</button>
+                                {{-- <a href="{{ route('admin.image-download', ['img_path' => $each->passport]) }}" class="my-2 rounded-sm border border-gray-600 text-gray-600 p-2">Download</a> --}}
                             </div>
                            
                             <h3 class="text-base font-bold">Phone: <span class="text-gray-400"> {{ $each->phone }}</span></h3>
