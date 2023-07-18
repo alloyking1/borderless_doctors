@@ -2,10 +2,10 @@
     <x-lander.section-a show_btn="true">
     </x-lander.section-a>
     <div class="grid md:grid-cols-2 md:-mb-24 gap-4 md:p-40">
-        <div class="h-2/3">
+        <div class="p-4 px-8 mt-16">
                 <img class="rounded-sm h-full shadow-2xl" src="https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">          
         </div>
-        <div class="pt-24">
+        <div class="pt-24 px-16 mb-24 lg:mt-40">
             <p class="text-3xl font-light py-2">Welcome To</p>
             <h2 class="text-5xl font-black">Modern Clinic</h2>
             <p class="py-8 text-gray-700">
@@ -15,7 +15,7 @@
             </p>
             <div>
                 <div class="mt-12">
-                    <a href="#" class="rounded-md bg-gradient-to-r from-sky-500 to-blue-500 text-white px-10 p-4">About Us</a>
+                    <a href="{{ route('pages.about') }}" class="rounded-md bg-gradient-to-r from-sky-500 to-blue-500 text-white px-10 p-4">About Us</a>
                 </div>
             </div>
         </div>
@@ -24,15 +24,14 @@
     <div class="bg-gray-50 md:p-40 p-8 w-auto">
         <div class="mx-4">
             <h1 class="md:text-5xl text-4xl font-black">Departments</h1>
-            <div class="mr-16">
-                <p class="py-4 pr-16 text-gray-700 text-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="lg:mr-16">
+                <p class="py-4 lg:pr-16 text-gray-700 text-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
             </div>
        
         </div>
         
         <div class="flex flex-row flex-wrap gap-4 mx-4 py-16">
             <div class="p-8 border border-blue-400 text-blue-400 rounded-sm bg-white">
-                
                 Dentist
             </div>
             <div class="p-8 border border-blue-400 text-blue-400 rounded-sm bg-white">
@@ -42,17 +41,19 @@
                 ENT Specialist
             </div>
         </div>
-        <div class="grid grid-cols-1 m-4 rounded-md md:grid-cols-2 p-8 md:px-40 text-black bg-white shadow-2xl">
+        <div class="grid grid-cols-1 m-4 rounded-md lg:grid-cols-2 p-8 md:px-40 text-black bg-white shadow-2xl">
             <div><img src="https://preview.colorlib.com/theme/medi/img/department/1.jpg.webp" alt=""></div>
-            <div class="mx-8">
-                <h2>Dentist with surgical mask holding
-                    scaler near patient</h2>
+            <div class="md:mx-8 mt-4">
+                <h2 class="text-3xl font-light py-2">
+                    Dentist with surgical mask holding
+                    scaler near patient
+                </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                     <div class="mt-12">
-                        <a href="#" class="border-4 border-blue-400 text-blue-400 md:p-6 p-4">Make an appointment</a>
+                        <a href="#" class="border-4 border-blue-400 text-blue-400 md:p-6 p-2 text-xs md:text-base">Book Appointment</a>
                     </div> 
             </div>
         </div>
@@ -70,7 +71,7 @@
             </p>
 
             <div class="my-8">
-                <a href="#" class="border-4 border-black text-black font-extrabold p-4 md:text-lg text-xs">Learn more about what we do</a>
+                <a href="#" class="border-4 border-black text-black font-extrabold p-4 md:text-lg text-xs">Learn more</a>
             </div>
         </div>
         <div>
@@ -171,8 +172,8 @@
     </x-lander.section-a> --}}
     <x-lander.section-b>
         <div class="text-center place-content-center">
-            <h1 class="text-2xl md:text-5xl font-black py-2">Our Doctors</h1>
-            <div class="md:px-68 text-wrap pl-16 pr-16 my-8 mb-4">
+            <h1 class="text-3xl md:text-5xl font-black py-2">Our Doctors</h1>
+            <div class="md:px-68 text-wrap lg:pl-16 lg:pr-16 my-8 mb-4">
                 <p class="text-lg font-light text-center mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                 </p>
@@ -258,64 +259,5 @@
         </div>
     </x-lander.section-b>
 
-    <div class="bg-gray-50 text-white">
-        <div class="grid md:grid-cols-2 grid-cols-1 w-full">
-            <div class="bg-gradient-to-r from-sky-500 to-blue-500 p-16">
-                <p class="text-xl my-2">We are here for you</p>
-                <h1 class="text-5xl">Book Appointment</h1>
-                <div class="my-12">
-                    <a href="#" class="border-2 border-white text-white md:text-lg text-xs md:p-4 p-2 rounded-md">Book Appointment</a>
-                </div> 
-            </div>
-
-            <div class="bg-gradient-to-r from-sky-400 to-sky-500 p-16">
-                <p class="text-xl my-2">Emergency Medical Care</p>
-                <h1 class="text-5xl">+1-465 4545</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="p-16 bg-[#152538] text-white">
-        <div class="grid md:grid-cols-3 grid-cols-1 gap-4 pb-16 px-16">
-            <div>
-                <img src="https://preview.colorlib.com/theme/medi/img/logo.png.webp" alt="Logo">
-                <div class="p-2 mt-4">
-                    <p class="text-gray-400">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h1 class="text-xl font-bold">Our Departments</h1>
-                <div class="border-2 border-white w-8 my-4"></div>
-                <div  class="text-gray-400">
-                    <p class="my-2">Birth</p>
-                    <p class="my-2">Pulmonary</p>
-                    <p class="my-2">Cardiology</p>
-                    <p class="my-2">Neurology</p>
-                    <p class="my-2">Traumatology</p>
-                    <p class="my-2">Dental</p>
-                    <p class="my-2">Nuclearmagnetic</p>
-                    
-                </div>
-            </div>
-            <div>
-                <h1 class="text-xl font-bold">We’re Available</h1>
-                <div class="border-2 border-white w-8 my-4"></div>
-                <div  class="text-gray-400">
-                    <p class="my-2"> Monday - Friday: 8.00 - 18.00</p>
-                    <p class="my-2">Saturday: 8.00 - 18.00</p>
-                    <p class="my-2">Sunday: 8.00 - 13.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="text-left">
-            <hr class="border-gray-600">
-            <p class="mt-8 text-gray-600">
-                Copyright ©2023 All rights reserved | This template is made with  by Colorlib
-            </p>
-        </div>
-    </div>
+    <x-lander.footer/>
 </x-guest-layout>

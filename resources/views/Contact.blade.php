@@ -32,48 +32,36 @@
     </div>
 
     <div class="bg-gray-50 md:p-40 p-8 w-auto">
-        <div class="mx-4">
-            <h1 class="md:text-3xl text-4xl font-black">Get in Touch</h1>
-        </div>
         
-        <div class="grid grid-cols-1 m-4 rounded-md p-8 md:px-40 text-black bg-white shadow-2xl">
+        <div class="grid grid-cols-1 m-4 rounded-2xl p-8 md:px-40 text-black bg-white shadow-2xl">
+            <div class="my-4">
+                <h1 class="md:text-3xl text-4xl font-black">Get in Touch</h1>
+                <p class="text-gray-900 text-xs font-thin">You need to Log in to request the service of a doctor</p>
+            </div>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
         
-                <!-- Email Address -->
-                <div>
-                    <x-input-label for="email" :value="__('Name')" />
-                    {{-- <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" /> --}}
-                    <textarea class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" rows="6" cols="80" type="email"></textarea>
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
-                </div>
 
                 <!-- Email Address -->
                 <div class="grid grid-cols-2 gap-2 mt-4">
                     <div>
-                        <x-input-label for="email" :value="__('Email')" />
-                    <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" placeholder="name" :value="old('name')" required />
+                    <x-input-error :messages="$errors->get('name')" class="mt-2" />
                     </div>
                     <div>
-                        <x-input-label for="email" :value="__('Email')" />
-                    <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required  autocomplete="username" />
+                    <x-text-input placeholder="email" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required  />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
                     
                 </div>
-        
-                <!-- Password -->
+
+                <!-- Email Address -->
                 <div class="mt-4">
-                    <x-input-label for="password" :value="__('Password')" />
-        
-                    <x-text-input id="password" class="block mt-1 w-full"
-                                    type="password"
-                                    name="password"
-                                    required autocomplete="current-password" />
-        
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    <textarea class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="message" placeholder="Message" rows="6" cols="80" type="text"></textarea>
+                    <x-input-error :messages="$errors->get('message')" class="mt-2" />
                 </div>
+
+                
         
                 <div class="flex items-center justify-end mt-4">
             
@@ -86,64 +74,5 @@
         </div>
     </div>
 
-    <div class="bg-gray-50 text-white">
-        <div class="grid md:grid-cols-2 grid-cols-1 w-full">
-            <div class="bg-gradient-to-r from-sky-500 to-blue-500 p-16">
-                <p class="text-xl my-2">We are here for you</p>
-                <h1 class="text-5xl">Book Appointment</h1>
-                <div class="my-12">
-                    <a href="#" class="border-2 border-white text-white md:text-lg text-xs md:p-4 p-2 rounded-md">Book Appointment</a>
-                </div> 
-            </div>
-
-            <div class="bg-gradient-to-r from-sky-400 to-sky-500 p-16">
-                <p class="text-xl my-2">Emergency Medical Care</p>
-                <h1 class="text-5xl">+1-465 4545</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="p-16 bg-[#152538] text-white">
-        <div class="grid md:grid-cols-3 grid-cols-1 gap-4 pb-16 px-16">
-            <div>
-                <img src="https://preview.colorlib.com/theme/medi/img/logo.png.webp" alt="Logo">
-                <div class="p-2 mt-4">
-                    <p class="text-gray-400">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h1 class="text-xl font-bold">Our Departments</h1>
-                <div class="border-2 border-white w-8 my-4"></div>
-                <div  class="text-gray-400">
-                    <p class="my-2">Birth</p>
-                    <p class="my-2">Pulmonary</p>
-                    <p class="my-2">Cardiology</p>
-                    <p class="my-2">Neurology</p>
-                    <p class="my-2">Traumatology</p>
-                    <p class="my-2">Dental</p>
-                    <p class="my-2">Nuclearmagnetic</p>
-                    
-                </div>
-            </div>
-            <div>
-                <h1 class="text-xl font-bold">We’re Available</h1>
-                <div class="border-2 border-white w-8 my-4"></div>
-                <div  class="text-gray-400">
-                    <p class="my-2"> Monday - Friday: 8.00 - 18.00</p>
-                    <p class="my-2">Saturday: 8.00 - 18.00</p>
-                    <p class="my-2">Sunday: 8.00 - 13.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="text-left">
-            <hr class="border-gray-600">
-            <p class="mt-8 text-gray-600">
-                Copyright ©2023 All rights reserved | This template is made with  by Colorlib
-            </p>
-        </div>
-    </div>
+    <x-lander.footer/>
 </x-guest-layout>

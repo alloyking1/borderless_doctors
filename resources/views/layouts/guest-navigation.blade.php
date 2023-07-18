@@ -12,7 +12,7 @@
       </button>
     </div>
 
-    {{-- <div class=""> --}}
+
       <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <a href="{{ route('pages.home') }}" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200 mr-4">
@@ -29,7 +29,7 @@
           <a href="/login" class="inline-block text-sm px-6 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-800 hover:bg-white mt-4 lg:mt-0">Book Appointment</a>
         </div>
       </div>
-    {{-- </div> --}}
+ 
 
     {{-- responsive nav --}}
     <div :class="{'block': open, 'hidden': ! open}" class="w-full lg:items-center lg:w-auto lg:hidden hidden">
