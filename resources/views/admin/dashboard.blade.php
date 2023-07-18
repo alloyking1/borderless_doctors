@@ -27,10 +27,10 @@
                             <tr class="border border-b-gray-100">
                                 
                                 <td>{{ $request->id }}</td>
-                                <td>{{ $request->phone }}</td>
-                                <td>{{ $request->ssn }}</td>
-                                <td>{{ $request->address }}</td>
-                                <td>{{ $request->requestDetails }}</td>
+                                <td><a href="{{ route('admin.show', ['id' => $request->id] )}}">{{ $request->phone }}</a></td>
+                                <td><a href="{{ route('admin.show', ['id' => $request->id] )}}">{{ $request->ssn }}</a></td>
+                                <td><a href="{{ route('admin.show', ['id' => $request->id] )}}">{{ $request->address }}</a></td>
+                                <td><a href="{{ route('admin.show', ['id' => $request->id] )}}">{{ $request->requestDetails }}</a></td>
                                 <td class="hover:text-blue-500">
                                     <a href="{{ route('admin.show', ['id' => $request->id] )}}"> {{ $request->passport }}</a>
                                 </td>
