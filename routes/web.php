@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,7 @@ Route::get('/', function () {
 
 Route::view('/contact', 'Contact')->name('pages.contact');
 Route::view('/about', 'About')->name('pages.about');
+Route::post('/contact', [ContactController::class, 'save'])->name('pages.contact');
 
 
 Route::get('/dashboard', function () {

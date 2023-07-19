@@ -26,7 +26,7 @@
           </a>
         </div>
         <div>
-          <a href="{{ route('dashboard') }}" class="inline-block text-sm px-6 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-800 hover:bg-white mt-4 lg:mt-0">Book Appointment</a>
+          <a href="{{ route('dashboard') }}" class="inline-block text-sm px-6 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-800 hover:bg-white mt-4 lg:mt-0">Request Leave</a>
         </div>
       </div>
  
@@ -45,7 +45,7 @@
         </a>
       </div>
       <div>
-        <a href="{{ route('dashboard') }}" class="inline-block text-sm px-6 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-800 hover:bg-white mt-4 lg:mt-0">Book Appointment</a>
+        <a href="{{ route('dashboard') }}" class="inline-block text-sm px-6 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-800 hover:bg-white mt-4 lg:mt-0">Request Leave</a>
       </div>
     </div>
   </nav>

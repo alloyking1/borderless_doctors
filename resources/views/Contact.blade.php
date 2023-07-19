@@ -27,17 +27,25 @@
     </div>
 
     <div class="bg-gray-50 md:p-40 p-8 w-auto">
+       
         
         <div class="grid grid-cols-1 m-4 rounded-2xl p-8 md:px-40 text-black bg-white shadow-2xl">
             <div class="my-4">
                 <h1 class="md:text-3xl text-4xl font-black">Get in Touch</h1>
                 <p class="text-gray-900 text-xs font-thin">You need to Log in to request the service of a doctor</p>
             </div>
-            <form method="POST" action="{{ route('login') }}">
+           
+                @if ($message = session()->has('message'))
+                <div class="bg-green-500 text-white p-4">
+                    {{ 'Your request was received. We will get back to you shortly' }}.
+                </div>
+                @endif
+            
+            <form method="POST" action="{{ route('pages.contact') }}">
                 @csrf
         
 
-                <!-- Email Address -->
+                <!-- name -->
                 <div class="grid grid-cols-2 gap-2 mt-4">
                     <div>
                     <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" placeholder="name" :value="old('name')" required />
@@ -52,8 +60,8 @@
 
                 <!-- Email Address -->
                 <div class="mt-4">
-                    <textarea class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="message" placeholder="Message" rows="6" cols="80" type="text"></textarea>
-                    <x-input-error :messages="$errors->get('message')" class="mt-2" />
+                    <textarea class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="body" placeholder="Message" rows="6" cols="80" type="text"></textarea>
+                    <x-input-error :messages="$errors->get('body')" class="mt-2" />
                 </div>
 
                 
