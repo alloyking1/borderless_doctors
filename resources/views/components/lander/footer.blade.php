@@ -21,9 +21,7 @@
             <img src="https://preview.colorlib.com/theme/medi/img/logo.png.webp" alt="Logo">
             <div class="py-2 mt-4">
                 <p class="text-gray-400">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore.
+                    Your Health, Our Priority - Providing Compassionate Care with Excellence.
                 </p>
             </div>
         </div>
@@ -54,7 +52,7 @@
     <div class="text-left">
         <hr class="border-gray-600">
         <p class="mt-8 text-gray-600">
-            Copyright ©2023 All rights reserved | This template is made with  by Colorlib
+            Copyright ©2023 All rights reserved 
         </p>
     </div>
 </div>

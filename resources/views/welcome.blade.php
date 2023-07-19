@@ -62,7 +62,7 @@
                         
                     </p>
                     <div class="mt-12">
-                        <a href="#" class="border-4 border-blue-400 text-blue-400 md:p-6 p-2 text-xs md:text-base">Book Appointment</a>
+                        <a href="{{ route('dashboard') }}" class="border-4 border-blue-400 text-blue-400 md:p-6 p-2 text-xs md:text-base">Book Appointment</a>
                     </div> 
             </div>
         </div>
