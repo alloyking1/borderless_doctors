@@ -39,7 +39,14 @@ class DoctorController extends Controller
 
         ]);
 
-        return back()->with('success', 'Request submitted, we will get back to you shortly');
+        return redirect()->route('dashboard.request-a-doctor-step-two');
+
+        // return back()->with('success', 'Request submitted, we will get back to you shortly');
+    }
+
+    public function doctorApplicationStepTwo()
+    {
+        return view('dashboard.face-verify');
     }
 
     public function fileUpload(Request $request)

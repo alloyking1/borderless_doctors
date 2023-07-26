@@ -9,7 +9,7 @@
         <div class="max-w-7xl md:mx-auto mx-6 sm:px-6 lg:px-8">
             <div class="bg-white shadow-2xl rounded-2xl md:px-40 p-8 w-auto">
                 <div class="my-4">
-                    <h1 class="md:text-3xl text-4xl font-black">Request a Doctor</h1>
+                    <h1 class="md:text-3xl text-4xl font-black">Apply for a vacation for your loved one (Step 1)</h1>
                     <p class="text-gray-900 text-xs font-thin">We need these details for you ..</p>
                 </div>
 

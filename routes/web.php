@@ -34,6 +34,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/become-a-doctor', [DoctorController::class, 'becomeDoctor'])->name('dashboard.become-a-doctor');
     Route::get('/request-a-doctor', [DoctorController::class, 'requestDoctor'])->name('dashboard.request-a-doctor');
     Route::post('/request-a-doctor', [DoctorController::class, 'doctorApplication'])->name('dashboard.request-a-doctor');
+    Route::get('/request-a-doctor-step-2', [DoctorController::class, 'doctorApplicationStepTwo'])->name('dashboard.request-a-doctor-step-two');
+    // Route::post('/request-a-doctor', [DoctorController::class, 'doctorApplication'])->name('dashboard.request-a-doctor');
 });
 
 Route::middleware('admin')->group(function () {
