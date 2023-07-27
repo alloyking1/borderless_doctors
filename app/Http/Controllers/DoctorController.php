@@ -25,10 +25,13 @@ class DoctorController extends Controller
             'ssn' => 'required | string',
             'address' => 'required | string',
             'requestDetails' => 'required',
-            'passport' => 'required|file|mimes:jpg,jpeg,png,doc,docx,csv,pdf'
+            'passport' => 'required|file|mimes:jpg,jpeg,png,doc,docx,csv,pdf',
+            'passport_back' => 'required|file|mimes:jpg,jpeg,png,doc,docx,csv,pdf',
         ]);
 
-        $filePathToStore = $this->fileUpload($request);
+        $filePathToStore = $this->fileUpload($request, 'passport');
+        $filePathToStoreTwo = $this->fileUpload($request, 'passport_back');
+
         Doctor::create([
             'phone' => $request->phone,
             'ssn' => $request->ssn,
@@ -36,7 +39,7 @@ class DoctorController extends Controller
             'requestDetails' => $request->requestDetails,
             'users_id' => Auth::id(),
             'passport' => $filePathToStore,
-
+            'passport_back' => $filePathToStoreTwo,
         ]);
 
         return redirect()->route('dashboard.request-a-doctor-step-two');
@@ -49,10 +52,11 @@ class DoctorController extends Controller
         return view('dashboard.face-verify');
     }
 
-    public function fileUpload(Request $request)
+    public function fileUpload(Request $request, $key)
     {
-        $imageName = time() . '.' . $request->file('passport')->extension();
-        $path = $request->file('passport')->move(public_path('images'), $imageName);
+
+        $imageName = rand() . time() . '.' . $request->file($key)->extension();
+        $path = $request->file($key)->move(public_path('images'), $imageName);
         return $imageName;
     }
 }

@@ -14,6 +14,7 @@ class Doctor extends Model
         'address',
         'requestDetails',
         'users_id',
-        'passport'
+        'passport',
+        'passport_back'
     ];
 }
